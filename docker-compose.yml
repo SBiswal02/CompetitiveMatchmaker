@@ -1,0 +1,11 @@
+services:
+  matchmaker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      RUST_LOG: info
+      MATCHMAKER_WORKERS: "4"
+      MATCHMAKER_SCAN_INTERVAL_MS: "50"

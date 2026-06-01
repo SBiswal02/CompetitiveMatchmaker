@@ -1,0 +1,19 @@
+[package]
+name = "matchmaker-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+matchmaker-types = { path = "../matchmaker-types" }
+dashmap = { workspace = true }
+parking_lot = { workspace = true }
+rand = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
